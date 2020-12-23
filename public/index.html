@@ -63,9 +63,9 @@
 </head>
   <body>
     <div  class='row'>
-      <div class='col-md-2'></div>
-      <div class='col-md-8' id="mydiv"></div>
-      <div class='col-md-2'></div>
+      <div class='col-md-1'></div>
+      <div class='col-md-10' id="mydiv"></div>
+      <div class='col-md-1'></div>
     </div>
 
     <script type="text/babel">
@@ -231,34 +231,43 @@
 		}
 
 
-		function GetDropdownListItemsNEW(sel1,sel2,sel3,sel4,sel5,sel6,sel7){
+		function GetDropdownListItemsNEW(sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10){
 		    let arrtemp=[];
 			arrtemp.push(GetSelectItemName());
-		
-			let itemelement=CheckDropDownItemExist('Birth Date',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
+    
+      let itemelement=CheckDropDownItemExist('Birth Date',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
 			if(itemelement.length >0){arrtemp.push(itemelement);}
-			
-     		itemelement=CheckDropDownItemExist('Email',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
-			if(itemelement.length >0){arrtemp.push(itemelement);}
-			
-     		itemelement=CheckDropDownItemExist('First Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
-			if(itemelement.length >0){arrtemp.push(itemelement);}			
 
-     		itemelement=CheckDropDownItemExist('Last Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
-			if(itemelement.length >0){arrtemp.push(itemelement);}			
+      itemelement=CheckDropDownItemExist('Customer Unique ID',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+      if(itemelement.length >0){arrtemp.push(itemelement);}	
+
+			itemelement=CheckDropDownItemExist('Email',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+			if(itemelement.length >0){arrtemp.push(itemelement);}
 			
-			itemelement=CheckDropDownItemExist('Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
+      itemelement=CheckDropDownItemExist('First Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
 			if(itemelement.length >0){arrtemp.push(itemelement);}	
 			
-			itemelement=CheckDropDownItemExist('Phone',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
+      itemelement=CheckDropDownItemExist('Hearsay Org ID',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+      if(itemelement.length >0){arrtemp.push(itemelement);}		
+
+      itemelement=CheckDropDownItemExist('Hearsy User Reference ID',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+      if(itemelement.length >0){arrtemp.push(itemelement);}
+
+      itemelement=CheckDropDownItemExist('Last Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+			if(itemelement.length >0){arrtemp.push(itemelement);}	
+
+      itemelement=CheckDropDownItemExist('Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+			if(itemelement.length >0){arrtemp.push(itemelement);}
+     				
+			itemelement=CheckDropDownItemExist('Phone',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
 			if(itemelement.length >0){arrtemp.push(itemelement);}				
 
-			itemelement=CheckDropDownItemExist('Preferred Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
+			itemelement=CheckDropDownItemExist('Preferred Name',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
       if(itemelement.length >0){arrtemp.push(itemelement);}						
       
-      itemelement=CheckDropDownItemExist('Title',sel1,sel2,sel3,sel4,sel5,sel6,sel7);
-      if(itemelement.length >0){arrtemp.push(itemelement);}		
-      
+      itemelement=CheckDropDownItemExist('Title',sel1,sel2,sel3,sel4,sel5,sel6,sel7,sel8,sel9,sel10);
+      if(itemelement.length >0){arrtemp.push(itemelement);}	
+				
 			return arrtemp;
 		}
 
@@ -349,18 +358,18 @@
             ArrayList2:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
             ArrayList3:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
             ArrayList4:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
-            ArrayList5:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList6:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList7:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList8:GetDropdownListItemsNEW('','','','','','',''),
+            ArrayList5:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList6:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList7:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList8:GetDropdownListItemsNEW('','','','','','','','','',''),
             ArrayList9:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
             ArrayList10:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
             ArrayList11:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
             ArrayList12:GetDropdownListItemsForFirstGroup('','','','','','','','','','',''),
-            ArrayList13:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList14:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList15:GetDropdownListItemsNEW('','','','','','',''),
-            ArrayList16:GetDropdownListItemsNEW('','','','','','',''),
+            ArrayList13:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList14:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList15:GetDropdownListItemsNEW('','','','','','','','','',''),
+            ArrayList16:GetDropdownListItemsNEW('','','','','','','','','',''),
             
             
             
