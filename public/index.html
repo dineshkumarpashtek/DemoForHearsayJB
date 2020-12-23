@@ -616,12 +616,13 @@
               this.setState({erControl16:""});
 
               this.setState({fieldCss:"row epaddingbottom10 ehidediv"});
-              alert("Saved Successdully");
+              alert("Saved Successfully");
             } else{
               this.setState({erValidationText:"The above fields are mandatory. Please select atleast one of the above options"});
             }
           }else if(this.state.page==3){
-              alert("Saved Successdully");
+              alert("Saved Successfully");
+			  console.log("Place the axios call here");
               this.setState({page:1});
             }
         }
