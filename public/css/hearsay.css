@@ -244,7 +244,7 @@ body {
         padding-top: 4px;
         border-radius: 6px;
         /* margin-left: 20px; */
-        width: 90px;
+        width: 60px;
     }
 
 .e1input3dpn{
@@ -598,15 +598,15 @@ body {
       color: red;
     }
     .svgStyles{
-      font-weight: bold;
+      /* font-weight: bold; */
       margin-right: -57px;
     }
     .wizardTextStyle{
-      font-weight: 700;
+      /* font-weight: 700; */
       fill: #fff;
-      font-size: 16px;
+      font-size: 15px;
       font-family: -1apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	  letter-spacing:1px;
+	  letter-spacing:0.2px;
     }
 	
     .polygonStyleSelected{
@@ -627,7 +627,7 @@ body {
     }
     .iconStyle{
       fill: #fff;
-      font-size: 13px;
+      font-size: 17px;
     }
     svg text {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", FontAwesome;
